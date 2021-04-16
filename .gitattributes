@@ -1,0 +1,7 @@
+common/ghandshekan/secrets/** filter=git-crypt diff=git-crypt
+wifi.nix filter=git-crypt diff=git-crypt
+git.nix filter=git-crypt diff=git-crypt
+
+
+# Prevent gitattributes from encryption in the future
+.gitattributes !filter !diff
