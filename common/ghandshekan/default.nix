@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     unstable.v2ray
+    unstable.openfortivpn
     unstable.dnscrypt-proxy2
   ];
 
@@ -14,4 +15,10 @@
      dnscrypt-proxy2.configFile = ./secrets/dnscrypt-1.toml;
   };
   
+  environment.etc = {
+      "openfortivpn/config" = {
+          enable = true;
+          source = ./secrets/forti;
+      };
+  };
 }

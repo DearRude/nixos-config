@@ -33,6 +33,7 @@ in {
     # Utilities
     unstable.keepassxc
     gcc
+    unstable.josm
     libnotify
     unstable.zenith
     lm_sensors
@@ -43,7 +44,7 @@ in {
     # Social
     unstable.tdesktop
     skype
-    discord
+    unstable.discord
 
   ];
 
